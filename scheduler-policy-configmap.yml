@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-scheduler-policy
+  namespace: kube-system
+data:
+ policy.cfg : |
+  {
+    "kind" : "Policy",
+    "apiVersion" : "v1",
+    "extenders" : [{
+      "urlPrefix": "http://10.205.20.161:8080/scheduler",
+      "filterVerb": "filter",
+      "bindVerb": "",
+      "enableHttps": false,
+      "nodeCacheCapable": false
+    }]
+  }
