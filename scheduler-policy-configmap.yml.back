@@ -24,6 +24,7 @@ data:
     "extenders" : [{
       "urlPrefix": "http://10.205.20.161:8080/scheduler",
       "filterVerb": "filter",
+      "prioritizeVerb":"",
       "bindVerb": "",
       "enableHttps": false,
       "nodeCacheCapable": false
